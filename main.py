@@ -12,6 +12,8 @@ while not end_the_bid:
     bid = int(input("Can we know the bid amount ?\n$"))
 
     bidders_dictionary[name] = bid
+    # Another way of updating the dictionary 👇🏻
+    # bidders_dictionary.update({name:bid}) #Instead of line 14 you can use this code on line 16
 
     bid_interest = input("Anyone else interested in bidding(yes/no) ? ")
     if bid_interest.lower() != "yes":
